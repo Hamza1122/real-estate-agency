@@ -1,0 +1,43 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "Simple authentication app using node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcrypt": "^3.0.6",
+    "body": "^5.1.0",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.16.2",
+    "flash": "^1.1.0",
+    "handlebars": "^4.1.2",
+    "hbs": "^4.0.4",
+    "init": "^0.1.2",
+    "json": "^9.0.6",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.6.11",
+    "multer": "^1.4.2",
+    "nodemon": "^1.19.4",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-oauth2": "^1.5.0",
+    "python-shell": "^1.0.8",
+    "req-check": "^1.0.0",
+    "router": "^1.3.3",
+    "sequelize": "^5.21.1",
+    "validation-error": "^1.0.0"
+  },
+  "devDependencies": {
+    "express-validator": "^6.2.0"
+  }
+}
