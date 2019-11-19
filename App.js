@@ -16,7 +16,7 @@ var router=express.Router();
 var routes =require('./routes/user.js');
 //var users=require('./routes/users');
 var app=express();
-
+var expressSession=require('express-session');
 
 
 
@@ -56,6 +56,9 @@ app.use(session({
   resave:false,
   saveUninitialized:true,
 }))
+
+
+const { check, validationResult } = require('express-validator');
 
 
 //Connect Flash
