@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing File</title>
+</head>
+<body>
+
+
+
+
+
+<h1>{{title}} </h1>
+
+
+<form method="POST" action="/test">
+
+<input name="name" type="input">
+<input name="email" type="input">
+<input name="age" type="input">
+
+
+
+<input type="submit" name="submit">
+
+
+</form>
+
+<p>Hello World</p>
+
+
+{{# if errors }}
+		{{# each errors }}
+					<p class="alert alert-danger">{{ this.msg}}</p>
+		{{/each}}
+{{/if}}
+
+
+
+
+</body>
+</html>

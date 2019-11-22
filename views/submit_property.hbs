@@ -1,0 +1,669 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Meta Tags -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="  template">
+	<meta name="keywords" content="">
+	<meta name="author" content="unicoder">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--	Css Link
+	========================================================-->
+	<link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/bootstrap-slider.css">
+	<link rel="stylesheet" type="text/css" href="/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="/color.css" id="color-change">
+	<link rel="stylesheet" type="text/css" href="/responsive.css">
+	<link rel="stylesheet" type="text/css" href="/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/flaticon/flaticon.css">
+
+
+	<!--	Title
+	=========================================================-->
+	<title>  - Real Estate Template</title>
+</head>
+<body>
+
+	<div class="full-row top_bar py_10 bg-primary color-white">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-8 col-lg-8">
+					<div class="left_top_bar">
+						<div class="full-row deshbord_logo mr_20">
+							<a class="float-left" href="index.php"><img src="/logo/logo-icon.png" alt=""></a>
+						</div>
+						<div class="option d-inline-block float-left mr_20">
+							<div class="dropdown">
+							  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Dashboard Option
+							  </a>
+
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							    <a class="dropdown-item" href="#">Action</a>
+							    <a class="dropdown-item" href="#">Another action</a>
+							    <a class="dropdown-item" href="#">Something else here</a>
+							  </div>
+							</div>
+						</div>
+						<div class="alam float-left mr_20 d-xs-none">
+					  		<a class="color-default" href="#"><i class="fa fa-bell" aria-hidden="true"></i><sup class="color-white">10</sup></a>
+					  	</div>
+					  	<div class="comment float-left mr_20 d-xs-none">
+					  		<a class="color-default" href="#"><i class="fa fa-comments" aria-hidden="true"></i><sup class="color-white">5</sup></a>
+					  	</div>
+
+					  	<div class="link_property mr_20 d-xs-none">
+					  		<a class="color-white" href="#">+ Submit Property</a>
+					  	</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-lg-4">
+					<div class="right_top_bar float-right">
+						<div class="balance float-left mr_20">
+							<p>Balance: <span class="color-default">$34580.00</span></p>
+						</div>
+						<div class="profile_user d-inline-block mr_20">
+							<div class="dropdown">
+							  <a class="dropdown-toggle color-white" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							  	<img src="/team/01.jpg" alt="">
+							    Hi, Karan
+							  </a>
+
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+							    <a class="dropdown-item" href="#">Profile</a>
+							    <a class="dropdown-item" href="#">sign out</a>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="full-row deshbord">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-1 col-xl-2 bg-primary">
+					<div class="row">
+						<div class="full-row deshbord_sidebar flat_small py_30 w-100">
+							<h6 class="color-default border_gray pb_15 m-0 px_15"><span>Overview</span></h6>
+							<ul class="mt_10">
+								<li><a href="dashboard_comment.html"><i class="flaticon-comment"></i><span>Page2</span> <span class="color-default">(12)</span></a></li>
+
+							</ul>
+							<h6 class="color-default border_gray pb_15 pt_50 m-0 px_15"><span>Manage Property</span></h6>
+							<ul class="mt_10">
+
+								<li class="active"><a href="dashboard_submit_property.html"><i class="flaticon-forward"></i><span>Submit Property</span></a></li>
+							</ul>
+							<h6 class="color-default border_gray pb_15 pt_50 m-0 px_15"><span>Your Details</span></h6>
+							<ul class="mt_10">
+								<li><a href="dashboard_personal_info.html"><i class="flaticon-seller"></i><span>Personal Information</span></a></li>
+								<li><a href="/agent_info"><i class="flaticon-resume"></i><span>Profile Settings</span></a></li>
+
+							</ul>
+							<h6 class="color-default border_gray pb_15 pt_50 m-0 px_15"><span>Your Items</span></h6>
+							<ul class="mt_10">
+								<li><a href="/tax_info"><i class="flaticon-tax"></i><span>Item Tax Information</span></a></li>
+
+							</ul>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-11 col-xl-10 bg-gray">
+					<div class="row">
+						<div class="full-row deshbord_panel w-100 mb-5">
+							<h4 class="color-primary mb-4">Submit Property</h4>
+
+							<div class="submit_form color-secondery icon_primary p-5 bg-white">
+
+
+
+
+
+
+
+								<form action="/add_property"  enctype="multipart/form-data" method="POST">
+									<div class="description">
+										<h5 class="color-primary">Basic Information</h5>
+										<hr>
+
+
+										<div class="row">
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Property Status</label><span class="ml-2 fa-2x"><i title="Property Title" class="fa fa-question-circle" aria-hidden="true"></i></span>
+													<input type="text" name="property_status" class="form-control">
+												</div>
+											</div>
+
+											<div class="col-lg-6 col-md-12">
+												<div class="form-group">
+													<label>Property Status</label>
+													<select class="form-control" name="status">
+														<option>Any Status</option>
+														<option name='1'>Bachelor</option>
+														<option name='2'>Family</option>
+
+													</select>
+												</div>
+											</div>
+
+
+											<div class="col-lg-6 col-md-12">
+												<div class="form-group">
+												<label>Property Types</label>
+													<select class="form-control" name='property_type'>
+														<option>Any Status</option>
+														<option name='Status1'>Apartment</option>
+														<option name='Status2'>Flat</option>
+														<option name='Status3'>Bungalow</option>
+													</select>
+												</div>
+											</div>
+
+
+											<div class="col-lg-6 col-md-12">
+												<div class="form-group">
+													<label>Property Name</label><span class="ml-2 fa-2x"><i title="Property Price" class="fa fa-question-circle" aria-hidden="true"></i></span>
+													<input type="text" placeholder="Aprio Apartment" class="form-control" name='property_name'>
+												</div>
+											</div>
+
+
+											<div class="col-lg-6 col-md-12">
+												<div class="form-group">
+													<label>Property Id</label><span class="ml-2 fa-2x"><i title="Property Price" class="fa fa-question-circle" aria-hidden="true"></i></span>
+													<input type="text" placeholder="Propert ID" class="form-control" name='property_id'>
+												</div>
+											</div>
+
+
+
+
+
+
+											<div class="col-lg-6 col-md-12">
+												<div class="form-group">
+													<label>Price</label><span class="ml-2 fa-2x"><i title="Property Price" class="fa fa-question-circle" aria-hidden="true"></i></span>
+													<input type="text" placeholder="USD" class="form-control" name='price'>
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-12">
+												<div class="form-group">
+													<label>Area</label><span class="ml-2 fa-2x"><i title="Property Price" class="fa fa-question-circle" aria-hidden="true"></i></span>
+													<input type="text" placeholder="Sq Ft" class="form-control"  name='area'>
+												</div>
+											</div>
+
+
+
+
+
+
+
+
+											<div class="col-lg-6 col-md-12">
+												<div class="form-group">
+													<label>Bed Rooms</label><span class="ml-2 fa-2x"><i title="Property Price" class="fa fa-question-circle" aria-hidden="true"></i></span>
+													<input type="text" placeholder="1" class="form-control position-relative" name='bedrooms'>
+													<div class="buttons color-white text-center">
+
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="col-lg-6 col-md-12">
+												<div class="form-group">
+													<label>Bath Rooms</label><span class="ml-2 fa-2x"><i title="Property Price" class="fa fa-question-circle" aria-hidden="true"></i></span>
+													<input type="text" placeholder="1" class="form-control position-relative" name='bath_room'>
+													<div class="buttons color-white text-center">
+													</div>
+												</div>
+											</div>
+
+											</div>
+										</div>
+
+
+									<div class="description mt-4">
+										<h5 class="color-primary">Description</h5>
+										<hr>
+										<div class="row">
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Description</label>
+													<textarea class="form-control bg-gray" placeholder="Write Details..." name='description'></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
+
+									<div class="property-location mt-4">
+										<h5 class="color-primary">Property Location</h5>
+										<hr>
+										<div class="row">
+											<div class="col-lg-6 col-md-6">
+												<div class="form-group">
+															<label>Property Name</label>
+															<input type="text" placeholder="Aprio Apartment" class="form-control" name='property_address'>
+
+												</div>
+											</div>
+
+
+
+											<div class="col-lg-6 col-md-6">
+												<div class="form-group">
+													<label>City</label>
+													<select class="form-control" name='city_name'>
+														<option>Select City</option>
+														<option name='karachi'>Karachi</option>
+														<option name='Lahore'>Lahore</option>
+														<option name='Islamabad'>Islamabad</option>
+													</select>
+												</div>
+											</div>
+
+
+
+											<div class="col-lg-4 col-md-4">
+												<div class="form-group">
+													<label>State</label>
+													<select class="form-control" name="state">
+														<option>Select State</option>
+														<option name="sindh">Sindh</option>
+														<option name="kpk">KPK</option>
+														<option name="punjab">Punjab</option>
+														<option name="gilgit">Gilgit Balochistan</option>
+
+													</select>
+												</div>
+											</div>
+
+
+											<div class="col-lg-4 col-md-4">
+												<div class="form-group">
+															<label>Zip Code</label><span class="ml-2 fa-2x"><i title="Property Price" class="fa fa-question-circle" aria-hidden="true"></i></span>
+															<input type="text" placeholder="920" class="form-control" name='zip_code'>
+												</div>
+											</div>
+
+
+											<div class="col-lg-4 col-md-4">
+												<div class="form-group">
+												<label>Country</label>
+													<select class="form-control" name="country">
+														<option>Select Country</option>
+														<option name="Pakistan">Pakistan</option>
+														<option name="USA">USA</option>
+														<option name="UAE">UAE</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="additional_feature mt-4">
+										<h5 class="color-primary">Additional Features</h5>
+										<div class="row">
+											<div class="col-lg-3">
+												<ul class="check_submit">
+													<li>
+														<input id="feature_1" class="hide" type="checkbox" name="feature_1">
+														<label for="feature_1">Garden Include</label>
+
+
+													</li>
+
+
+
+
+
+
+
+
+
+													<li>
+														<input id="feature_2" class="hide" type="checkbox" name='feature2'>
+														<label for="feature_2">Fire Place Facility</label>
+													</li>
+
+													<li>
+														<input id="feature_3" class="hide" type="checkbox" name='feature3'>
+														<label for="feature_3">Store Room</label>
+													</li>
+
+													<li>
+														<input id="feature_4" class="hide" type="checkbox" name='feature4'>
+														<label for="feature_4">Security Alarm</label>
+													</li>
+
+												</ul>
+											</div>
+											<div class="col-lg-3">
+												<ul class="check_submit">
+													<li>
+														<input id="feature_5" class="hide" type="checkbox" name='feature5'>
+														<label for="feature_5">Garage Facility</label>
+													</li>
+													<li>
+														<input id="feature_6" class="hide" type="checkbox" name='feature6'>
+														<label for="feature_6">Play Ground</label>
+													</li>
+													<li>
+														<input id="feature_7" class="hide" type="checkbox" name='feature7'>
+														<label for="feature_7">Hight Class Door</label>
+													</li>
+													<li>
+														<input id="feature_8" class="hide" type="checkbox" name='feature8'>
+														<label for="feature_8">Fitness Room</label>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-3">
+												<ul class="check_submit">
+													<li>
+														<input id="feature_9" class="hide" type="checkbox" name='feature9'>
+														<label for="feature_9">Fire Security</label>
+													</li>
+													<li>
+														<input id="feature_10" class="hide" type="checkbox" name='featuree10'>
+														<label for="feature_10">Ferniture Include</label>
+													</li>
+													<li>
+														<input id="feature_11" class="hide" type="checkbox" name='feature11'>
+														<label for="feature_11">Floor Heating System</label>
+													</li>
+													<li>
+														<input id="feature_12" class="hide" type="checkbox" name='feature12'>
+														<label for="feature_12">Bathtub And Shaware</label>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-3">
+												<ul class="check_submit">
+													<li>
+														<input id="feature_13" class="hide" type="checkbox" name='feature13'>
+														<label for="feature_13">Swiming Pool</label>
+													</li>
+													<li>
+														<input id="feature_14" class="hide" type="checkbox" name='feature14'>
+														<label for="feature_14">Marbel Floor</label>
+													</li>
+													<li>
+														<input id="feature_15" class="hide" type="checkbox"  name='feature15'>
+														<label for="feature_15">Air Condition Facility</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="property_plan mt-4">
+										<h5 class="color-primary">Property Plans</h5>
+										<div class="row">
+											<div class="col-lg-12">
+												<div class="accordion mt_30" id="accordion1" role="tablist">
+													<div class="card mb_20">
+														<div class="card-header py-2 px-0" role="tab">
+															<h6 class="m-0"><a href="#collapseOne" data-toggle="collapse" data-parent="#accordion1" aria-expanded="true" class="panel_accordian">Floor Plans</a></h6>
+														</div>
+														<div class="collapse show" id="collapseOne" role="tabpanel" style="">
+															<div class="card-body">
+																<div class="row">
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																			<label>Masted Bed</label>
+																			<input type="text" name="master_bed" class="form-control">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																			<label>Kitchen</label>
+																			<input type="text" name="kitchen" class="form-control">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																			<label>Dining</label>
+																			<input type="text" name="dining" class="form-control">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																			<label>Baths</label>
+																			<input type="text" name="baths" class="form-control">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																			<label>Storage</label>
+																			<input type="text" name="storage" class="form-control">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																		</div>
+																	</div>
+																	<div class="description col-lg-12 mt-4">
+																		<div class="row">
+																			<div class="col-lg-12 col-md-12">
+
+
+																				<div class="form-group">
+
+																				</div>
+																			</div>
+
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card mb_20">
+														<div class="card-header py-2 px-0" role="tab">
+															<h6 class="m-0"><a class="panel_accordian" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion1" aria-expanded="true">Garage Plan</a></h6>
+														</div>
+														<div class="collapse" id="collapseTwo" role="tabpanel" style="">
+															<div class="card-body recent_activity">
+																<div class="row">
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																		</div>
+																	</div>
+																	<div class="description col-lg-12 mt-4">
+																		<div class="row">
+																			<div class="col-lg-12 col-md-12">
+																				<div class="form-group">
+																				</div>
+																				<div class="form-group">
+
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card mb_20">
+														<div class="card-header py-2 px-0" role="tab">
+															<h6 class="m-0"><a class="panel_accordian" href="#collapseThree" data-toggle="collapse" data-parent="#accordion1" aria-expanded="true">Garden Design</a></h6>
+														</div>
+														<div class="collapse" id="collapseThree" role="tabpanel" style="">
+															<div class="card-body">
+																<div class="row">
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-4">
+																		<div class="form-group">
+																		</div>
+																	</div>
+																	<div class="description col-lg-12 mt-4">
+																		<div class="row">
+																			<div class="col-lg-12 col-md-12">
+																				<div class="form-group">
+																				</div>
+																				<div class="form-group">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="upload_media mt-5">
+										<h5 class="color-primary">Add Photos and Videos</h5>
+										<hr>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="browse_submit">
+													<input type="file" name="myImage" accept="image/*" />
+												</div>
+											</div>
+
+											<div class="col-lg-12">
+												<div class="property_thumbnails mt-5">
+													<div class="row">
+														<div class="thumbnails_box mb_30 col-lg-1 col-md-4 col-6">
+															<img src="/thumbnail/01.jpg" alt="">
+															<i class="fa fa-window-close"></i>
+														</div>
+														<div class="thumbnails_box mb_30 col-lg-1 col-md-4 col-6">
+															<img src="/thumbnail/02.jpg" alt="">
+															<i class="fa fa-window-close"></i>
+														</div>
+														<div class="thumbnails_box mb_30 col-lg-1 col-md-4 col-6">
+															<img src="/thumbnail/03.jpg" alt="">
+															<i class="fa fa-window-close"></i>
+														</div>
+														<div class="thumbnails_box mb_30 col-lg-1 col-md-4 col-6">
+															<img src="/thumbnail/04.jpg" alt="">
+															<i class="fa fa-window-close"></i>
+														</div>
+														<div class="thumbnails_box mb_30 col-lg-1 col-md-4 col-6">
+															<img src="/thumbnail/05.jpg" alt="">
+															<i class="fa fa-window-close"></i>
+														</div>
+														<div class="thumbnails_box mb_30 col-lg-1 col-md-4 col-6">
+															<img src="/thumbnail/06.jpg" alt="">
+															<i class="fa fa-window-close"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<input type="submit" value="Upload Photo"/>
+
+
+									</div>
+
+
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</form>
+							</div>
+						</div>
+						<div class="dashboard_copyright bg-white py-4 color-secondery text-center">© 2019   All right reserved</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Scroll to top -->
+	<a href="#" class="bg-default color-white" id="scroll"><i class="fa fa-angle-up"></i></a>
+<!-- End Scroll To top -->
+</div>
+</div>
+<!-- Wrapper End -->
+	<!--	Js Link
+============================================================-->
+<script src="/jquery.min.js"></script>
+<!--jQuery Layer Slider -->
+<script src="/greensock.js"></script>
+<script src="/layerslider.transitions.js"></script>
+<script src="/layerslider.kreaturamedia.jquery.js"></script>
+<script src="/popper.min.js"></script>
+<script src="/bootstrap.min.js"></script>
+<script src="/owl.carousel.min.js"></script>
+<script src="/tmpl.js"></script>
+<script src="/jquery.dependClass-0.1.js"></script>
+<script src="/draggable-0.1.js"></script>
+<script src="/jquery.slider.js"></script>
+<script src="/wow.js"></script>
+<script src="/YouTubePopUp.jquery.js"></script>
+<script src="/chart.min.js"></script>
+<script src="/jquery.cookie.js"></script>
+<script src="/settings.js"></script>
+<script src="/custom.js"></script>
+
+</body>
+</html>

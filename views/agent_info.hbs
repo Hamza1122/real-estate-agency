@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Meta Tags -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="  template">
+	<meta name="keywords" content="">
+	<meta name="author" content="unicoder">
+
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--	Css Link
+	========================================================-->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-slider.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="color.css" id="color-change">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="flaticon/flaticon.css">
+
+
+	<!--	Title
+	=========================================================-->
+	<title>  - Real Estate Template</title>
+</head>
+<body>
+
+	<div class="full-row top_bar py_10 bg-primary color-white">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8 col-lg-8">
+					<div class="left_top_bar">
+						<div class="full-row deshbord_logo mr_20">
+							<a class="float-left" href="index.php"><img src="/logo/logo-icon.png" alt=""></a>
+						</div>
+						<div class="option d-inline-block float-left mr_20">
+							<div class="dropdown">
+							  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Dashboard Option
+							  </a>
+
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							    <a class="dropdown-item" href="#">Action</a>
+							    <a class="dropdown-item" href="#">Another action</a>
+							    <a class="dropdown-item" href="#">Something else here</a>
+							  </div>
+							</div>
+						</div>
+						<div class="alam float-left mr_20 d-xs-none">
+					  		<a class="color-default" href="#"><i class="fa fa-bell" aria-hidden="true"></i><sup class="color-white">10</sup></a>
+					  	</div>
+					  	<div class="comment float-left mr_20 d-xs-none">
+					  		<a class="color-default" href="#"><i class="fa fa-comments" aria-hidden="true"></i><sup class="color-white">5</sup></a>
+					  	</div>
+					  	<div class="link_property mr_20 d-xs-none">
+					  		<a class="color-white" href="#">+ Submit Property</a>
+					  	</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4">
+					<div class="right_top_bar float-right">
+						<div class="balance float-left mr_20">
+							<p>Balance: <span class="color-default">$34580.00</span></p>
+						</div>
+						<div class="profile_user d-inline-block mr_20">
+							<div class="dropdown">
+							  <a class="dropdown-toggle color-white" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							  	<img src="images/team/01.jpg" alt="">
+							    Hi, Karan
+							  </a>
+
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+							    <a class="dropdown-item" href="#">Profile</a>
+							    <a class="dropdown-item" href="#">sign out</a>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="full-row deshbord">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-1 col-xl-2 bg-primary">
+					<div class="row">
+						<div class="full-row deshbord_sidebar flat_small py_30 w-100">
+							<h6 class="color-default border_gray pb_15 m-0 px_15"><span>Overview</span></h6>
+							<ul class="mt_10">
+								<li><a href="dashboard_massanger.html"><i class="flaticon-dashboard"></i><span>Dashboard</span></a></li>
+
+
+							</ul>
+							<h6 class="color-default border_gray pb_15 pt_50 m-0 px_15"><span>Manage Property</span></h6>
+							<ul class="mt_10">
+								<li><a href="dashboard_listing.html"><i class="flaticon-home"></i><span>Listing Properties</span></a></li>
+								<li><a href="/submit_property"><i class="flaticon-forward"></i><span>Submit Property</span></a></li>
+
+
+							</ul>
+							<h6 class="color-default border_gray pb_15 pt_50 m-0 px_15"><span>Your Details</span></h6>
+							<ul class="mt_10">
+								<li class="active"><a href="dashboard_personal_info.html"><i class="flaticon-seller"></i><span>Personal Information</span></a></li>
+								<li><a href="/agent_info"><i class="flaticon-resume"></i><span>Profile Settings</span></a></li>
+
+							</ul>
+							<h6 class="color-default border_gray pb_15 pt_50 m-0 px_15"><span>Your Items</span></h6>
+							<ul class="mt_10">
+								<li><a href="/tax_info"><i class="flaticon-tax"></i><span>Item Tax Information</span></a></li>
+
+							</ul>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-11 col-xl-10 bg-gray">
+					<div class="row">
+						<div class="full-row deshbord_panel w-100 mb-5">
+							<h4 class="color-primary mb-4">Personal Information</h4>
+							<div class="dashboard_personal_info p-5 bg-white">
+								<form action="/agent_info" method="POST">
+									<h5 class="color-primary">Account Info</h5>
+									<hr>
+									<div class="row mt-4">
+										<div class="col-lg-6 col-md-12">
+
+                      <div class="form-group">
+												<label>Agent User ID</label>
+												<input type="text" name="agent_id" class="form-control">
+											</div>
+
+
+                      <div class="form-group">
+                        <label>Agent</label>
+                        <select class="form-control" name='agent_type'>
+                          <option>Select Agent Type</option>
+                          <option name='agent_type_1'>Buyer's Agent</option>
+                          <option name='agent_type_2'>Seller's Agent</option>
+                          <option name='agent_type_3'>Dual Agent</option>
+                          <option name='agent_type_4'>Realtor</option>
+                        </select>
+                      </div>
+
+
+                    	<div class="form-group">
+												<label>Your Name</label>
+												<input type="text" name="agent_name" class="form-control">
+											</div>
+
+
+                    	<div class="form-group">
+												<label>Your Title</label>
+												<input type="text" name="agent_title" class="form-control">
+											</div>
+
+                    	<div class="form-group">
+												<label>Email Address</label>
+												<input type="text" name="agent_email" class="form-control">
+											</div>
+
+                    	<div class="form-group position-relative">
+												<label>Phone Number</label>
+												<select class="phone_code bg-gray">
+													<option>+01</option>
+													<option>+02</option>
+													<option>+03</option>
+													<option>+04</option>
+												</select>
+												<input type="text" name="phone" class="form-control">
+											</div>
+
+                      <div class="form-group">
+												<label>Age</label>
+												<input type="text" name="agent_age" class="form-control" name='agent_age'>
+											</div>
+
+                      <div class="form-group">
+												<label>Experience</label>
+												<input type="text" name="agent_experience" class="form-control" name="agent_experience">
+											</div>
+
+
+	                   <div class="form-group">
+												<label>Country</label>
+												<select class="form-control" name='agent_country'>
+													<option>Select Country</option>
+													<option name='agent_country1'>US</option>
+													<option name='agent_country2'>UK</option>
+													<option name='agent_country3'>BD</option>
+													<option name='agent_country4'>IND</option>
+												</select>
+											</div>
+
+
+
+                      <div class="form-group">
+												<label>About Me</label>
+												<textarea class="form-control" rows="7" name="agent_about_me"></textarea>
+											</div>
+
+                    	<div class="more_info">
+												<h5 class="color-primary">More Info</h5>
+												<hr>
+												<div class="form-group">
+													<label>Address</label>
+													<input type="text" name="agent_address" class="form-control" placeholder="First LIne (Optional)" name="agent_address">
+												</div>
+
+												<div class="row">
+													<div class="col-lg-6">
+														<div class="form-group">
+															<label>City / State</label>
+															<input type="text" name="agent_city" class="form-control">
+														</div>
+													</div>
+													<div class="col-lg-6">
+												<div class="form-group">
+													<label>DOB</label>
+													<input type="text" name="agent_dob" class="form-control" placeholder="DD-MM-YY (Optional)">
+												</div>
+											</div>
+											<button class="btn btn-default1 mb-3">Save Change</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="dashboard_copyright bg-white py-4 color-secondery text-center">© 2019   All right reserved</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Scroll to top -->
+	<a href="#" class="bg-default color-white" id="scroll"><i class="fa fa-angle-up"></i></a>
+<!-- End Scroll To top -->
+</div>
+</div>
+<!-- Wrapper End -->
+	<!--	Js Link
+============================================================-->
+<script src="jquery.min.js"></script>
+<!--jQuery Layer Slider -->
+<script src="greensock.js"></script>
+<script src="layerslider.transitions.js"></script>
+<script src="layerslider.kreaturamedia.jquery.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script src="tmpl.js"></script>
+<script src="jquery.dependClass-0.1.js"></script>
+<script src="draggable-0.1.js"></script>
+<script src="jquery.slider.js"></script>
+<script src="wow.js"></script>
+<script src="YouTubePopUp.jquery.js"></script>
+<script src="chart.min.js"></script>
+<script src="jquery.cookie.js"></script>
+<script src="settings.js"></script>
+<script src="custom.js"></script>
+
+</body>
+</html>

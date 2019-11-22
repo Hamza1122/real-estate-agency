@@ -14,6 +14,10 @@ var db=mongoose.connection;
 const hbs=require('hbs');
 var router=express.Router();
 var routes =require('./routes/user.js');
+
+var passport = require("passport");
+require('./config/passport')(passport);
+
 //var users=require('./routes/users');
 var app=express();
 var expressSession=require('express-session');
@@ -83,6 +87,7 @@ app.get('/index',function(req,res){
 //Passport middleware
 
 app.use('/',routes);
+
 //app.use('./users',users);
 
 app.set('port',(process.env.PORT|| 3000));
